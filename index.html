@@ -3,220 +3,271 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Trade With Munaaf</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Global Book Publication</title>
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-background:#0f172a;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-color:#fff;
+    background:#f5f7fb;
 }
-
-/* CARD */
 
 .container{
-width:95%;
-max-width:420px;
-padding:30px 25px;
-border-radius:18px;
-
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(12px);
-
-border:1px solid rgba(255,255,255,0.08);
-
-box-shadow:0 20px 60px rgba(0,0,0,0.6);
-text-align:center;
+    max-width:500px;
+    margin:auto;
+    background:#fff;
 }
 
-/* LOGO */
+.header{
+    background:#08264a;
+    color:#fff;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
 .logo{
-width:80px;
-height:80px;
-border-radius:50%;
-border:2px solid #FFD700;
-margin-bottom:12px;
+    font-size:26px;
+    font-weight:bold;
 }
 
-/* TEXT */
-
-h1{
-font-size:22px;
-color:#FFD700;
-margin-bottom:6px;
+.badge{
+    background:#f8b400;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
 }
 
-h2{
-font-size:15px;
-opacity:0.9;
-margin-bottom:10px;
+.hero{
+    text-align:center;
+    padding:50px 20px;
 }
 
-.sub{
-font-size:13px;
-opacity:0.7;
-margin-bottom:18px;
+.hero h1{
+    font-size:48px;
+    color:#111;
+    margin-bottom:20px;
 }
 
-/* BUTTON */
-
-.btn{
-display:block;
-text-decoration:none;
-background:#22c55e;
-color:#000;
-font-weight:700;
-padding:16px;
-border-radius:10px;
-margin:12px 0;
-transition:0.3s;
+.hero span{
+    color:#2f63ff;
 }
 
-.btn:hover{
-background:#16a34a;
-transform:scale(1.03);
+.hero p{
+    font-size:22px;
+    color:#555;
+    line-height:1.6;
 }
 
-/* TRUST BOX */
-
-.trust{
-background:rgba(0,255,150,0.08);
-padding:10px;
-border-radius:10px;
-font-size:13px;
-margin-bottom:15px;
-border:1px solid rgba(0,255,150,0.2);
+.telegram-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#2f63ff;
+    color:#fff;
+    text-decoration:none;
+    padding:18px 40px;
+    border-radius:12px;
+    font-size:24px;
+    font-weight:bold;
 }
 
-/* LIST */
-
-.points{
-list-style:none;
-font-size:14px;
-text-align:left;
-margin:15px 0;
+.books{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    padding:20px;
 }
 
-.points li{
-margin:8px 0;
+.books img{
+    width:100%;
+    border-radius:15px;
 }
 
-/* URGENCY */
-
-.timer{
-margin-top:10px;
-font-size:13px;
-color:#facc15;
+.features{
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
 }
 
-/* SOCIAL PROOF */
-
-.proof{
-margin-top:12px;
-font-size:12px;
-opacity:0.7;
+.feature{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    width:30%;
 }
 
-/* FOOTER BRAND */
+.feature h3{
+    margin-top:10px;
+    font-size:16px;
+}
+
+.section-title{
+    padding:20px;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.plan{
+    margin:15px;
+    padding:25px;
+    border:2px solid #ddd;
+    border-radius:20px;
+    background:#fff;
+}
+
+.plan.active{
+    border-color:#2f63ff;
+}
+
+.plan h2{
+    font-size:34px;
+}
+
+.price{
+    float:right;
+    color:#111;
+}
+
+.target{
+    margin-top:15px;
+    color:#666;
+    font-size:24px;
+}
+
+.support{
+    margin:20px;
+    background:#08264a;
+    color:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.support h2{
+    margin-bottom:15px;
+}
+
+.support-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#f8b400;
+    color:#fff;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
 
 .footer{
-margin-top:20px;
-font-size:12px;
-opacity:0.6;
+    text-align:center;
+    padding:20px;
+    color:#666;
 }
-
-.footer a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:600;
-}
-
-.footer a:hover{
-text-decoration:underline;
-}
-
-/* RISK */
-
-.risk{
-margin-top:10px;
-font-size:11px;
-opacity:0.5;
-}
-
 </style>
 </head>
-
 <body>
 
 <div class="container">
 
-<img src="https://i.ibb.co/HThtfpR7/Whats-App-Image-2026-01-30-at-8-54-08-PM.jpg" class="logo">
+<div class="header">
+<div class="logo">🌍 GLOBAL BOOK</div>
+<div class="badge">PUBLICATION</div>
+</div>
 
-<h1>TRADE WITH MUNAAF</h1>
-<h2>NIFTY • BANKNIFTY • OPTIONS</h2>
-
-<p class="sub">
-Daily Intraday Trading Signals & Analysis
+<div class="hero">
+<h1>Start Your Global <span>Writing Career</span></h1>
+<p>
+Publish quality content, work with professional teams,
+and grow your writing portfolio.
 </p>
 
-<!-- TOP BUTTON -->
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-🚀 Join Free Telegram Channel
+<a href="https://t.me/+oknh0iNrGugxYzU1" class="telegram-btn">
+📨 Apply via Telegram
 </a>
-
-<div class="trust">
-✔ Trusted by 5,000+ Traders <br>
-✔ Daily Consistent Setups
 </div>
 
-<ul class="points">
-<li>✔ 5–7 High Probability Trades</li>
-<li>✔ Exact Entry, SL & Target</li>
-<li>✔ Beginner Friendly Guidance</li>
-<li>✔ Live Market Updates</li>
-</ul>
+<div class="books">
+<img src="https://picsum.photos/300/300?1">
+<img src="https://picsum.photos/300/300?2">
+<img src="https://picsum.photos/300/300?3">
+<img src="https://picsum.photos/300/300?4">
+</div>
 
-<!-- BOTTOM BUTTON -->
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-🚀 Join Free Telegram Channel
+<div class="features">
+<div class="feature">
+🌐
+<h3>Global Reach</h3>
+</div>
+
+<div class="feature">
+💵
+<h3>Secure Pay</h3>
+</div>
+
+<div class="feature">
+📦
+<h3>Fast Delivery</h3>
+</div>
+</div>
+
+<div class="section-title">
+📝 Writing Plans
+</div>
+
+<div class="plan">
+<h2>7 Days Plan <span class="price">₹25,000</span></h2>
+<div class="target">Target: 49 Pages</div>
+</div>
+
+<div class="plan active">
+<h2>10 Days Plan <span class="price">₹30,000</span></h2>
+<div class="target">Target: 100 Pages</div>
+</div>
+
+<div class="plan">
+<h2>15 Days Plan <span class="price">₹35,000</span></h2>
+<div class="target">Target: 150 Pages</div>
+</div>
+
+<div class="support">
+<h2>Ready to Connect?</h2>
+<p>Our support team is available online.</p>
+
+<a href="https://t.me/+oknh0iNrGugxYzU1" class="support-btn">
+📨 Apply via Telegram
 </a>
-
-<div class="timer">
-⏳ Free Access Closing Soon
 </div>
 
-<div class="proof">
-📈 Limited Seats • Active Community
-</div>
-
-<p class="risk">
-⚠ Market investments are subject to risk
-</p>
-
-<!-- CLEAN FOOTER -->
 <div class="footer">
-Powered by 
-<a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">
-AdsBuild Agency
-</a>
+© 2026 Global Book Publication
 </div>
 
 </div>
-
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1687198698844361');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1687198698844361&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
